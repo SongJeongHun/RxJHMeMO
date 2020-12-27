@@ -3,29 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A749DADE25986DD100494598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749DADD25986DD100494598 /* AppDelegate.swift */; };
 		A749DAE025986DD100494598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749DADF25986DD100494598 /* SceneDelegate.swift */; };
-		A749DAE225986DD100494598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749DAE125986DD100494598 /* ViewController.swift */; };
 		A749DAE525986DD100494598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A749DAE325986DD100494598 /* Main.storyboard */; };
 		A749DAE825986DD100494598 /* RxJHMeMO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A749DAE625986DD100494598 /* RxJHMeMO.xcdatamodeld */; };
 		A749DAEA25986DD200494598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A749DAE925986DD200494598 /* Assets.xcassets */; };
 		A749DAED25986DD200494598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A749DAEB25986DD200494598 /* LaunchScreen.storyboard */; };
+		A7722DD525986ECC0002D183 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A7722DD425986ECC0002D183 /* Podfile */; };
+		A7722DE9259871A10002D183 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7722DE8259871A10002D183 /* Memo.swift */; };
+		B4CD0BF16C0FD20C20374F0C /* Pods_RxJHMeMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2C5C3E8E06E3189E1A1BE6 /* Pods_RxJHMeMO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97CF6CAEAFB14E9052319BAB /* Pods-RxJHMeMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxJHMeMO.debug.xcconfig"; path = "Target Support Files/Pods-RxJHMeMO/Pods-RxJHMeMO.debug.xcconfig"; sourceTree = "<group>"; };
 		A749DADA25986DD100494598 /* RxJHMeMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxJHMeMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A749DADD25986DD100494598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A749DADF25986DD100494598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A749DAE125986DD100494598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A749DAE425986DD100494598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A749DAE725986DD100494598 /* RxJHMeMO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxJHMeMO.xcdatamodel; sourceTree = "<group>"; };
 		A749DAE925986DD200494598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A749DAEC25986DD200494598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A749DAEE25986DD200494598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7722DD425986ECC0002D183 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		A7722DE8259871A10002D183 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		AA2C5C3E8E06E3189E1A1BE6 /* Pods_RxJHMeMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxJHMeMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4349CE8DF40BD9FD504E3C9 /* Pods-RxJHMeMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxJHMeMO.release.xcconfig"; path = "Target Support Files/Pods-RxJHMeMO/Pods-RxJHMeMO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CD0BF16C0FD20C20374F0C /* Pods_RxJHMeMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FB01839313D754007191226 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97CF6CAEAFB14E9052319BAB /* Pods-RxJHMeMO.debug.xcconfig */,
+				B4349CE8DF40BD9FD504E3C9 /* Pods-RxJHMeMO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6196D512B1D3A0FF49AAEDC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA2C5C3E8E06E3189E1A1BE6 /* Pods_RxJHMeMO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A749DAD125986DD100494598 = {
 			isa = PBXGroup;
 			children = (
 				A749DADC25986DD100494598 /* RxJHMeMO */,
 				A749DADB25986DD100494598 /* Products */,
+				4FB01839313D754007191226 /* Pods */,
+				6196D512B1D3A0FF49AAEDC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +84,57 @@
 		A749DADC25986DD100494598 /* RxJHMeMO */ = {
 			isa = PBXGroup;
 			children = (
+				A7722DE52598710B0002D183 /* Scene */,
+				A7722DE4259870FA0002D183 /* Service */,
+				A7722DE3259870E00002D183 /* ViewModel */,
+				A7722DE2259870CD0002D183 /* VIewController */,
+				A7722DE1259870BC0002D183 /* Model */,
 				A749DADD25986DD100494598 /* AppDelegate.swift */,
 				A749DADF25986DD100494598 /* SceneDelegate.swift */,
-				A749DAE125986DD100494598 /* ViewController.swift */,
-				A749DAE325986DD100494598 /* Main.storyboard */,
+				A7722DD425986ECC0002D183 /* Podfile */,
 				A749DAE925986DD200494598 /* Assets.xcassets */,
-				A749DAEB25986DD200494598 /* LaunchScreen.storyboard */,
 				A749DAEE25986DD200494598 /* Info.plist */,
 				A749DAE625986DD100494598 /* RxJHMeMO.xcdatamodeld */,
 			);
 			path = RxJHMeMO;
+			sourceTree = "<group>";
+		};
+		A7722DE1259870BC0002D183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7722DE8259871A10002D183 /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7722DE2259870CD0002D183 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				A749DAE325986DD100494598 /* Main.storyboard */,
+				A749DAEB25986DD200494598 /* LaunchScreen.storyboard */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		A7722DE3259870E00002D183 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A7722DE4259870FA0002D183 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A7722DE52598710B0002D183 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A749DAF125986DD200494598 /* Build configuration list for PBXNativeTarget "RxJHMeMO" */;
 			buildPhases = (
+				984121A1E6555EFFE96CA29B /* [CP] Check Pods Manifest.lock */,
 				A749DAD625986DD100494598 /* Sources */,
 				A749DAD725986DD100494598 /* Frameworks */,
 				A749DAD825986DD100494598 /* Resources */,
+				93AA1F0726DE25C3F8A68977 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,21 +198,64 @@
 			files = (
 				A749DAED25986DD200494598 /* LaunchScreen.storyboard in Resources */,
 				A749DAEA25986DD200494598 /* Assets.xcassets in Resources */,
+				A7722DD525986ECC0002D183 /* Podfile in Resources */,
 				A749DAE525986DD100494598 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		93AA1F0726DE25C3F8A68977 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxJHMeMO/Pods-RxJHMeMO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxJHMeMO/Pods-RxJHMeMO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxJHMeMO/Pods-RxJHMeMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		984121A1E6555EFFE96CA29B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxJHMeMO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A749DAD625986DD100494598 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A749DAE225986DD100494598 /* ViewController.swift in Sources */,
 				A749DADE25986DD100494598 /* AppDelegate.swift in Sources */,
 				A749DAE025986DD100494598 /* SceneDelegate.swift in Sources */,
 				A749DAE825986DD100494598 /* RxJHMeMO.xcdatamodeld in Sources */,
+				A7722DE9259871A10002D183 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +399,7 @@
 		};
 		A749DAF225986DD200494598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CF6CAEAFB14E9052319BAB /* Pods-RxJHMeMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +419,7 @@
 		};
 		A749DAF325986DD200494598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4349CE8DF40BD9FD504E3C9 /* Pods-RxJHMeMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

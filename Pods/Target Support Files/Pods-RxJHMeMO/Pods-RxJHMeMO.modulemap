@@ -1,0 +1,6 @@
+framework module Pods_RxJHMeMO {
+  umbrella header "Pods-RxJHMeMO-umbrella.h"
+
+  export *
+  module * { export * }
+}
