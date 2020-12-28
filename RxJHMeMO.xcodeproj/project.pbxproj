@@ -28,6 +28,7 @@
 		A7722E0E2599B7BA0002D183 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7722E0D2599B7BA0002D183 /* Scene.swift */; };
 		A7722E112599BA810002D183 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7722E102599BA810002D183 /* SceneCoordinatorType.swift */; };
 		A7722E142599BB310002D183 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7722E132599BB310002D183 /* SceneCoordinator.swift */; };
+		A7722E172599C4D80002D183 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7722E162599C4D80002D183 /* CommonViewModel.swift */; };
 		B4CD0BF16C0FD20C20374F0C /* Pods_RxJHMeMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2C5C3E8E06E3189E1A1BE6 /* Pods_RxJHMeMO.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,7 @@
 		A749DAE925986DD200494598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A749DAEC25986DD200494598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A749DAEE25986DD200494598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7722DD425986ECC0002D183 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		A7722DD425986ECC0002D183 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7722DE8259871A10002D183 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		A7722DEB259878060002D183 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
 		A7722DF0259878E70002D183 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		A7722E0D2599B7BA0002D183 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		A7722E102599BA810002D183 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		A7722E132599BB310002D183 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		A7722E162599C4D80002D183 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		AA2C5C3E8E06E3189E1A1BE6 /* Pods_RxJHMeMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxJHMeMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4349CE8DF40BD9FD504E3C9 /* Pods-RxJHMeMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxJHMeMO.release.xcconfig"; path = "Target Support Files/Pods-RxJHMeMO/Pods-RxJHMeMO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 				A7722DFD2599B3D70002D183 /* MemoListViewModel.swift */,
 				A7722E002599B4020002D183 /* MemoDetailViewModel.swift */,
 				A7722E032599B4220002D183 /* MemoComposeViewModel.swift */,
+				A7722E162599C4D80002D183 /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				A7722E112599BA810002D183 /* SceneCoordinatorType.swift in Sources */,
 				A749DAE825986DD100494598 /* RxJHMeMO.xcdatamodeld in Sources */,
 				A7722DFE2599B3D70002D183 /* MemoListViewModel.swift in Sources */,
+				A7722E172599C4D80002D183 /* CommonViewModel.swift in Sources */,
 				A7722E012599B4020002D183 /* MemoDetailViewModel.swift in Sources */,
 				A7722DF52599B3240002D183 /* MemoListViewController.swift in Sources */,
 				A7722DFB2599B3740002D183 /* MemoComposeViewController.swift in Sources */,
