@@ -23,7 +23,6 @@ class MemoListViewController: UIViewController,ViewModelBindableType {
             .disposed(by:rx.disposeBag)
         viewModel.memoList
             .bind(to:ListTableView.rx.items(cellIdentifier: "cell")){row,memo,cell in
-                
                 cell.textLabel?.text = memo.content
             }
             .disposed(by: rx.disposeBag)
