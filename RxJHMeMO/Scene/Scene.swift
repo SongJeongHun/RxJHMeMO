@@ -30,7 +30,7 @@ extension Scene{
             guard let nav = storyboard.instantiateViewController(identifier: "ComposeNav") as? UINavigationController else { fatalError() }
             guard var composeVC = nav.viewControllers.first as? MemoComposeViewController else { fatalError() }
             composeVC.bind(viewModel:viewModel)
-            return composeVC
+            return nav
         }
     }
 }
