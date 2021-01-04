@@ -70,4 +70,5 @@ class MemoListViewModel:CommonViewModel{
             return self.sceneCoordinator.transition(to: detailScene, using: .push, animated: true).asObservable().map{ _ in }
         }
     }()
+    
 }
