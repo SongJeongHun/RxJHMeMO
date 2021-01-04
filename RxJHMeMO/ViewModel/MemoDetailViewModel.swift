@@ -27,4 +27,22 @@ class MemoDetailViewModel:CommonViewModel{
     lazy var popAction = CocoaAction{ [unowned self] in
         return self.sceneCoordinator.close(animated: true).asObservable().map{ _ in }
     }
+    func performUpdate(memo:Memo) -> Action<String,Void>{
+        return Action{input in
+             self.storage.update(memo: memo, content: input)
+                .subscribe(onNext:{updated in
+                    self.contents.onNext([updated.content,self.formatter.string(from: updated.insertDate)])
+                })
+                .disposed(by: self.rx.disposeBag)
+            return Observable.empty()
+            //observable<void> 타입을 맞춰주기 위함
+        }
+    }
+    func makeEditAction() -> CocoaAction{
+        return CocoaAction { _ in
+            let composeViewModel = MemoComposeViewModel(title: "Edit memo", content: self.memo.content, sceneCoordinator: self.sceneCoordinator, storage: self.storage, saveAction: self.performUpdate(memo: self.memo))
+            let composeScene = Scene.compose(composeViewModel)
+            return self.sceneCoordinator.transition(to: composeScene, using: .modal, animated: true).asObservable().map({_ in })
+        }
+    }
 }

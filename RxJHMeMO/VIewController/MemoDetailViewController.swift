@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
+import Action
 
 class MemoDetailViewController: UIViewController,ViewModelBindableType {
-    @IBOutlet weak var editButton: UIToolbar!
-    @IBOutlet weak var deleteButton: UIToolbar!
-    @IBOutlet weak var shareButton: UIToolbar!
+    @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBOutlet weak var deleteButton: UIBarButtonItem!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var listTableView: UITableView!
     var viewModel: MemoDetailViewModel!
     override func viewDidLoad() {
@@ -37,14 +41,6 @@ class MemoDetailViewController: UIViewController,ViewModelBindableType {
                 }
             }
             .disposed(by: rx.disposeBag)
-//        var backButton = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
-//        viewModel.title
-//            .drive(backButton.rx.title)
-//            .disposed(by: rx.disposeBag)
-//        backButton.rx.action = viewModel.popAction
-//        navigationItem.hidesBackButton = true
-//        navigationItem.leftBarButtonItem = backButton
+        editButton.rx.action = viewModel.makeEditAction()
     }
-    
-
 }

@@ -194,10 +194,10 @@
                     <navigationItem key="navigationItem" title="Memo View" id="fAl-UN-auU"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="deleteButton" destination="p1B-px-z78" id="L2I-BR-dkd"/>
-                        <outlet property="editButton" destination="p1B-px-z78" id="XOc-A8-5bw"/>
+                        <outlet property="deleteButton" destination="ZbB-cV-2LX" id="5gr-f3-bbB"/>
+                        <outlet property="editButton" destination="2CW-Wb-n2o" id="Pef-bS-VRm"/>
                         <outlet property="listTableView" destination="qXW-hB-Chw" id="Sow-Yi-ePC"/>
-                        <outlet property="shareButton" destination="p1B-px-z78" id="oPC-zg-lIx"/>
+                        <outlet property="shareButton" destination="J2b-Mj-7Tf" id="csp-gR-esy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGW-y9-mv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
